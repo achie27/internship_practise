@@ -2,15 +2,23 @@
 <html>
 <head>
 	<title>Exercise 2</title>
-	<link rel="stylesheet" type="text/css" href="styles2.css">
+	<link rel="stylesheet" type="text/css" href="./styles2.css">
+	<script type="text/javascript" src="./assign3.js"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+			for(let menuItem of document.querySelectorAll('header li a')){
+				menuItem.addEventListener('click', handleMenuColor);
+			}
+		};
+	</script>
 </head>
 <body>
 	<header>
-		<div id = 'logo_div'>
-			<object id='logo' type="image/svg+xml" data="logo.svg"></object>
+		<div id='logo_div'>
+			<img id='logo' src="logo.svg"></img>
 		</div>
 
-		<div id = "menu">
+		<div id="menu">
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Services</a></li>
@@ -22,33 +30,32 @@
 	
 	<div id="banner">
 		<div id = "left_arrow">
-			<h2><</h2>
+			<
 		</div>
 		<h1>BANNER</h1>
 		<div id="right_arrow">
-			<h2>></h2>
+			>
 		</div>
 	</div>
 
 	<div id="wrapper">
-		<div id="content">
-			<div id="yellow"></div>
-			<div id="orange">
-				<input class="input_section" type="text" name="f1" />
-				<input class="input_section"  type="text" name="f2" />
-				<select class="input_section" >
-					<option value="none"></option>
-				</select>
-
-				<button>Submit</button>
-			</div>
-			<div id="green"></div>
+		<div id="yellow">
+			<div id="purple"></div>
 		</div>
-		<div id="purple"></div>
+		<div id="orange">
+			<input class="input_section" type="text" name="f1" />
+			<input class="input_section"  type="text" name="f2" />
+			<select class="input_section" >
+				<option value="none"></option>
+			</select>
+
+			<button>Submit</button>
+		</div>
+		<div id="green"></div>		
 	</div>
 
 	<footer>
-		<div id = "bottom_menu">
+		<div id="bottom_menu">
 			<ul>
 				<li><a href="#">Home</a></li>|
 				<li><a href="#">Services</a></li>|
