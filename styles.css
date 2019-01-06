@@ -1,0 +1,132 @@
+.ex1 {
+  display:grid;
+  grid-gap: 10px;
+  width:600px;
+}
+.ex1_first {
+  height: 100px;
+  background-color: #ff4da6;
+  grid-row: 1;
+  grid-column: 1 / span 3;
+}
+.ex1_second {
+  height: 250px;
+  background-color: #ff037e;
+  grid-row: 2;
+  grid-column: 1 / span 2
+}
+.ex1_third {
+  height: 250px;
+  background-color: #ce0468;
+  grid-row: 2;
+  grid-column: 3 / span 1
+}
+.ex1_fourth {
+  height: 100px;
+  background-color: #802755;
+  grid-row: 3;
+  grid-column: 1 / span 3;
+}
+
+.ex2 {
+  display:grid;
+  grid-gap: 10px;
+  width:1100px;
+}
+.ex2_first {
+  height: 100px;
+  background-color: #55d4eb;
+  grid-row: 1;
+  grid-column: 1 / span 4;
+}
+.ex2_second {
+  height: 350px;
+  background-color: #a0c263;
+  grid-row: 2;
+  grid-column: 1
+}
+.ex2_third {
+  display:grid;
+  grid-gap: 10px;
+  height: 350px;
+  grid-column: 2 / span 3;
+  grid-row : 2;
+}
+.ex2_fourth {
+  background-color: #f5c531;
+  grid-row: 1 / span 3;
+}
+.ex2_fifth {
+  background-color: #898989;
+  grid-row: 4;
+}
+.ex2_sixth {
+  height: 100px;
+  background-color: #ffa500;
+  grid-row: 3;
+  grid-column: 1 / span 4;
+}
+
+.ex3 {
+  display:grid;
+  grid-gap: 5px;
+  width:1000px;
+  background-color: red;
+}
+.ex3_first {
+  height: 60px;
+  background-color: white;
+  grid-row: 1;
+  grid-column: 1 / span 3;
+}
+.ex3_second {
+  height: 300px;
+  background-color: red;
+  grid-row: 2;
+  grid-column: 1 / span 3
+}
+.ex3_third {
+  height: 300px;
+  background-color: black;
+  opacity: 0.8;
+  grid-row: 3;
+  grid-column: 1;
+}
+.ex3_fourth {
+  height: 300px;
+  background-color: black;
+  opacity: 0.8;
+  grid-row: 3;
+  grid-column: 2;
+}
+.ex3_fifth {
+  height: 300px;
+  background-color: black;
+  opacity: 0.8;
+  grid-row: 3;
+  grid-column: 3;
+}
+
+.table {
+  display: table;
+}
+
+.horizontal_align {
+  text-align: center;
+}
+
+.vertical_align {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.pad_top {
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.margin_left_top {
+  padding-left: 40px;
+  padding-top: 40px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,174 @@
+html, body {
+	margin : 0;
+}
+
+header {
+	background-color: lightgrey;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+
+#logo_div {
+	width: 30%;
+	float : left;
+}
+
+#logo {
+	width : 50px;
+	height : 50px;
+	margin : 5px;
+	margin-left : 50px;
+}
+
+#menu {
+	float: right;
+	width: 50%;
+	margin-right : 50px;
+}
+
+#menu ul {
+	float: right;
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu li a {
+	display: block;
+	color: #06a3cc;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#menu li a:hover {
+	background-color: black;
+	color: white;
+}
+
+#banner {
+	position: relative;
+	height: 225px;
+	width: 100%;
+	background-color: #06a3cc;
+	display: table;
+	color: white;
+}
+
+#left_arrow {
+	position: absolute;
+	left : 50px;
+	top: 40%;
+}
+
+#right_arrow {
+	position: absolute;
+	right : 50px;
+	top: 40%;
+}
+
+#banner h1 {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;	
+}
+
+#wrapper {
+	position: relative;
+	margin : 10px; 
+	margin-left: 50px;
+	margin-right: 50px; 
+	height: 400px;
+}
+
+#content {
+	height: 100%;
+}
+
+#purple {
+	position: absolute;
+	top : 0px;
+	top : 30px;
+	left: -30px;
+	width: 200px;
+	height: 250px;
+	background-color: #d49dd6;
+}
+
+#yellow {
+	float:left;
+	height: 100%;
+	width: 40%;
+	background-color: #ffe469;
+}
+
+#orange {
+	margin-left: 10px;
+	margin-bottom: 10px;
+	float: left;
+	height: calc(60% - 5px);
+	width: calc(60% - 10px);
+	background-color: #ed8719;
+}
+
+.input_section {
+	display: block;
+	margin: 10px;
+	margin-left:25px;
+	height: 30px;
+	width: 70%;
+	opacity: 0.25;
+}
+
+#orange button {
+	margin: 10px;
+	color:white;
+	width: 100px;
+	height: 35px;
+	border : solid;
+	border-width: 0.5px;
+	margin-left:25px;
+	background-color: #f9a449;
+	border-color: #f1a552;
+}
+
+#green {
+	margin-left: 10px;
+	float: left;
+	height: calc(40% - 5px);
+	width: calc(60% - 10px);
+	background-color: #8ae33b;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background-color: #06a3cc;
+	height: 53px;
+}
+
+#bottom_menu  {
+	width: 100%;
+	color: white;
+}
+
+#bottom_menu ul {
+	margin: 0px;
+}
+
+#bottom_menu li {
+	display:inline;
+	margin: 10px;
+}
+
+#bottom_menu li a {
+	text-decoration: none;
+	color: white;
+}
