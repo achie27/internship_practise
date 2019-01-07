@@ -5,9 +5,22 @@
 	<link rel="stylesheet" type="text/css" href="./styles2.css">
 	<script type="text/javascript" src="./assign3.js"></script>
 	<script type="text/javascript">
-		window.onload = function(){
+		window.onload = () => {
 			for(let menuItem of document.querySelectorAll('header li a')){
 				menuItem.addEventListener('click', handleMenuColor);
+			}
+
+			document.getElementById('left_arrow').addEventListener('click', handleBannerColor);
+			document.getElementById('right_arrow').addEventListener('click', handleBannerColor);
+
+			document.getElementById('submit').addEventListener('click', handleSubmitClick);
+
+			// Created a closure to wrap the handler with a specific color
+			let colors = ['blue', 'green', 'black', 'purple'], i = 0;
+			for(let menuItem of document.querySelectorAll('footer li a')){
+				menuItem.addEventListener('click', ((color) => {
+					return () => handleFooterMenuColor(color);
+				})(colors[i++]));
 			}
 		};
 	</script>
@@ -49,7 +62,7 @@
 				<option value="none"></option>
 			</select>
 
-			<button>Submit</button>
+			<button id='submit'>Submit</button>
 		</div>
 		<div id="green"></div>		
 	</div>
