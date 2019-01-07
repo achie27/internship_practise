@@ -174,7 +174,16 @@ footer {
 	color: white;
 }
 
-
-.active {
+a.active {
 	background-color: red;
+}
+
+#reset {
+	position: fixed;
+	right: 5%;
+	bottom: 5%;
+	color: white;
+	width: 60px;
+	height: 60px;
+	background-color: #332f2f;
 }

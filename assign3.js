@@ -21,3 +21,13 @@ function handleSubmitClickALT(){
 function handleFooterMenuColor(color){
 	document.querySelector('footer').style.backgroundColor = color;
 }
+
+function rollBack(){
+	for(let menuItem of document.querySelectorAll('header li a')){
+		menuItem.classList.remove('active');
+	}
+
+	document.getElementById('banner').style.color = 'white';
+	document.querySelector('footer').style.backgroundColor = '#06a3cc';
+	// document.getElementById('green').textContent = ''; 
+}
