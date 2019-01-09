@@ -25,9 +25,11 @@
 
 			document.getElementById('reset').addEventListener('click', rollBack);
 
-			document.getElementById('modal_close').addEventListener('click', () => {
+			let modal_event = () => {
 				document.getElementById('modal').style.visibility = 'hidden';
-			});
+			};
+
+			document.getElementById('modal_close').addEventListener('click', modal_event);
 		};
 	</script>
 </head>
@@ -75,10 +77,10 @@
 	</div>
 
 	<div id='modal'>
-		<div id='modal_close'>
-			X
+		<div id='modal_content'>
+			<div id='modal_close'>&times;</div>
+			This is a modal, apparently.
 		</div>
-		This is a modal, apparently.
 	</div>
 
 	<footer>

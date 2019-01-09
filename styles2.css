@@ -189,13 +189,22 @@ a.active {
 }
 
 #modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	visibility: visible;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#modal_content {
 	width: 400px;
 	height: 200px;
-	position: fixed;
+	position: absolute;
 	top: 20%;
 	left: calc(50% - 200px);
 	background-color: silver;
-	visibility: visible;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -205,4 +214,8 @@ a.active {
 	position: absolute;
 	right: 10px;
 	top: 5px;
+}
+
+#modal_close:hover {
+	cursor: pointer;
 }
