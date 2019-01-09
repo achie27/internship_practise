@@ -30,4 +30,6 @@ function rollBack(){
 	document.getElementById('banner').style.color = 'white';
 	document.querySelector('footer').style.backgroundColor = '#06a3cc';
 	// document.getElementById('green').textContent = ''; 
+
+	document.getElementById('modal').style.visibility = 'visible';
 }

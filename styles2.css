@@ -187,3 +187,22 @@ a.active {
 	height: 60px;
 	background-color: #332f2f;
 }
+
+#modal {
+	width: 400px;
+	height: 200px;
+	position: fixed;
+	top: 20%;
+	left: calc(50% - 200px);
+	background-color: silver;
+	visibility: visible;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#modal_close {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}

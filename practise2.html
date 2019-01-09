@@ -24,6 +24,10 @@
 			}
 
 			document.getElementById('reset').addEventListener('click', rollBack);
+
+			document.getElementById('modal_close').addEventListener('click', () => {
+				document.getElementById('modal').style.visibility = 'hidden';
+			});
 		};
 	</script>
 </head>
@@ -68,6 +72,13 @@
 		</div>
 		<div id="green"></div>		
 		<button id="reset"><b>RESET</b></button>
+	</div>
+
+	<div id='modal'>
+		<div id='modal_close'>
+			X
+		</div>
+		This is a modal, apparently.
 	</div>
 
 	<footer>
