@@ -98,13 +98,15 @@ header {
 
 #banner button {
 	margin: 10px 15px;
-	padding: 10px 20px;
+	padding: 10px 25px;
 	text-decoration: none;
 	background-color: transparent;
 	color: white;
-	border-width: 3px;
+	border:3px solid;
 	border-radius: 40px;
 	border-color: white;
+	font-size: 10px;
+	outline: 0;
 }
 
 #banner button:hover {
