@@ -5,6 +5,10 @@
 	box-sizing: border-box;
 }
 
+* img {
+	fill: black;
+}
+
 .button-like-text {
 	font-size: 11px;
 	font-weight: 800;
@@ -121,7 +125,7 @@ header {
 #hello-world {
 	position: relative;
 	width: 100%;
-	height: 650px;
+	height: 600px;
 	background-color: #fafaff;
 }
 
@@ -136,6 +140,27 @@ header {
 #hello-world-text {
 	width: 45%;
 	float: left;
+}
+
+#hello-world-text p {
+	margin: 20px 0 20px 0;
+}
+
+#hello-world-text ul {
+	list-style: none;
+	font-weight: 700;	
+}
+
+#hello-world-text ul li {
+	margin-top: 20px;
+	padding-left: 15px; 
+}
+
+#hello-world-text ul li img {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
 }
 
 #hello-world-pic {
