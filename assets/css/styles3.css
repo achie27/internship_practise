@@ -26,6 +26,13 @@
 	text-transform: uppercase;
 }
 
+.center-aligned {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
 .large-text {
 	font-size: 50px;
 	font-weight: 100;
@@ -63,13 +70,13 @@
 	color: white;
 }
 
-.dim {
-	color :lightgrey;
-}
-
 .yellow-button:hover {
 	background-color: #d6aa04;
 	border-color: #d6aa04;
+}
+
+.dim {
+	color :lightgrey;
 }
 
 header {
@@ -111,19 +118,15 @@ header {
 	background-color: #f5f6fb;
 }
 
-#banner, #services, #stats {
+#banner, #services, #stats, #testimonials {
 	width:100%;
 	position: relative;
     background-size: cover;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
 	color: white;
 }
 
-#banner::after, #services::after, #stats::after {
+#banner::after, #services::after, #stats::after, #testimonials::after {
 	content: "";
 	background-color: #0b0e4e;
 	opacity: 0.8;
@@ -203,9 +206,6 @@ header {
 
 .service-item, .stats-item {
 	float: left;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 }
 
@@ -297,9 +297,6 @@ header {
 	color: white;
 	border-radius: 50%;
 	background-color: #d6aa04;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 }
 
@@ -314,9 +311,6 @@ header {
 }
 
 #pricing {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	background-color: #fafaff;
 }
@@ -332,11 +326,6 @@ header {
 	margin-right: 50px;
 	height: 350px;
 	width: 300px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
 	border-style: solid;
 	border-width: 1px;
 	border-color: lightgrey;
@@ -355,4 +344,29 @@ header {
 
 .pricing-plans button:hover {
 	color: white;
+}
+
+#testimonials {
+	width: 100%;
+	height: 450px;
+	background-image: url('./../img-3.jpg');
+	background-position: center;
+}
+
+#testimonials-container {
+	width: 70%;
+	margin: auto auto;
+	padding-top: 50px;	
+}
+
+.testi-item {
+	float: left;
+	width: 50%;
+	align-items: center;
+}
+
+.testi-item img {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
 }
