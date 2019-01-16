@@ -99,7 +99,7 @@ header {
 	background-color: #f5f6fb;
 }
 
-#banner, #services {
+#banner, #services, #stats {
 	width:100%;
 	position: relative;
     background-size: cover;
@@ -111,7 +111,7 @@ header {
 	color: white;
 }
 
-#banner::after, #services::after {
+#banner::after, #services::after, #stats::after {
 	content: "";
 	background-color: #0b0e4e;
 	opacity: 0.8;
@@ -189,13 +189,20 @@ header {
 	padding: 30px 30px;
 }
 
-.service-item {
+.service-item, .stats-item {
 	float: left;
-	width: 33.33%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.service-item {
+	width: 33.33%;
+}
+
+.stats-item {
+	width: 25%;
 }
 
 .service-icon {
@@ -207,7 +214,7 @@ header {
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
-.service-item img {
+.service-icon img {
 	max-height: 50px;
 	max-width: 50px;
 }
@@ -282,4 +289,14 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+#stats {
+	height: 300px;
+	background-image: url('./../img-4.jpg');
+	background-position: center;
+}
+
+.stats-item p:hover {
+	color: #d6aa04;
 }
