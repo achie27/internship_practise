@@ -354,7 +354,7 @@ header {
 }
 
 #testimonials-container {
-	width: 70%;
+	width: 80%;
 	margin: auto auto;
 	padding-top: 50px;	
 }
@@ -372,7 +372,7 @@ header {
 }
 
 #blog {
-	width: 70%;
+	width: 80%;
 	margin: 50px auto;
 	height: 600px;
 }
@@ -411,7 +411,7 @@ footer {
 }
 
 #footer-content {
-	width: 70%;
+	width: 80%;
 	margin: auto auto;
 	height: 400px;
 }
