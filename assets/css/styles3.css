@@ -370,3 +370,36 @@ header {
 	height: 75px;
 	border-radius: 50%;
 }
+
+#blog {
+	width: 70%;
+	margin: 50px auto;
+	height: 600px;
+}
+
+#blog-post-container {
+	width: 100%;
+}
+
+.blog-post {
+	margin-right: 25px;
+	float: left;
+	max-width: 30%;
+	border-radius: 5px;
+	height: 450px;
+	box-shadow: 0 0 2px 0px;
+}
+
+.blog-post img {
+	max-width: 100%;
+	border-radius: 5px 5px 0 0;
+}
+
+.blog-post button {
+	border-color: #0b0e4e;
+	color: #0b0e4e;
+}
+
+.blog-post button:hover {
+	color: white;
+}
