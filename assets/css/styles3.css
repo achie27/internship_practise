@@ -403,3 +403,58 @@ header {
 .blog-post button:hover {
 	color: white;
 }
+
+footer {
+	width: 100%;
+	background-color: #0b0e4e;
+	color: white;
+}
+
+#footer-content {
+	width: 70%;
+	margin: auto auto;
+	height: 400px;
+}
+
+.footer-link {
+	float: left;
+	width: 25%;
+}
+
+#footer-link-container {
+	margin-top: 75px;
+	height: 200px;
+}
+
+.footer-link ul {
+	list-style: none;
+}
+
+.footer-link li, #footer-footer {
+	text-transform: uppercase;
+	font-size: x-small;
+	letter-spacing: 1.5px;
+	margin-bottom: 7px;
+}
+
+.footer-link input {
+	height: 40px;
+	border:none;		
+	float: left;
+	border-radius: 18px 0 0 18px;
+}
+
+.attached-icon {
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-color: #d6aa04;
+	border-radius: 0px 18px 18px 0px;
+	align-items: center;
+}
+
+.attached-icon img {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
