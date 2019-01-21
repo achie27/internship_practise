@@ -4,6 +4,12 @@
 	font-family: Arial;
 	box-sizing: border-box;
 }
+
+.container {
+	width: 1400px;
+	margin: auto auto;
+}
+
 .menu {
 	list-style-type: none;
 	overflow: hidden;
@@ -79,46 +85,39 @@
 	color :lightgrey;
 }
 
-header {
+.header-inner {
 	background-color:#fafaff;
 }
 
-#menu-container {
-	width: 100%;
-	margin: auto;
-}
-
-#logo-div {
+.logo-div {
 	width: 20%;
 	float: left;
 }
 
 #logo {
-	margin-left: 50px;	
 	height: 75px;
 	vertical-align: middle;
 }
 
-#menu-bar {
+.menu-bar {
 	width: 80%;
 	float: right;
 }
 
-#menu-bar ul {
-	margin-right: 50px;
+.menu-bar ul {
 	float: right;
 }
 
-#menu-bar li a {
+.menu-bar li a {
 	color: #4d435c;
 	padding: 28px 20px;
 }
 
-#menu-bar li a:hover {
+.menu-bar li a:hover {
 	background-color: #f5f6fb;
 }
 
-#banner, #services, #stats, #testimonials {
+.banner, .services, .stats, .testimonials {
 	width:100%;
 	position: relative;
     background-size: cover;
@@ -126,7 +125,7 @@ header {
 	color: white;
 }
 
-#banner::after, #services::after, #stats::after, #testimonials::after {
+.banner::after, .services::after, .stats::after, .testimonials::after {
 	content: "";
 	background-color: #0b0e4e;
 	opacity: 0.8;
@@ -138,69 +137,74 @@ header {
     z-index: -1;
 }
 
-#banner {
+.banner {
 	height: 650px;
 	background-image: url('./../img-1.jpg');
 }
 
-#hello-world {
+.banner-button, .service-button {
+	margin: 50px 10px;
+	display: inline-block;
+}
+
+.hello-world {
 	position: relative;
 	width: 100%;
-	height: 600px;
+	height: 550px;
 	background-color: #fafaff;
 }
 
-#hello-world-text, #hello-world-pic {
-	padding : 50px 75px;
+.hello-world-left, .hello-world-right {
+	padding : 50px 0;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-#hello-world-text {
+.hello-world-left {
 	width: 45%;
 	float: left;
 }
 
-#hello-world-text p {
+.hello-world-left-text p {
 	margin: 20px 0 20px 0;
 }
 
-#hello-world-text ul {
+.hello-world-left-list ul {
 	list-style: none;
 	font-weight: 700;	
 }
 
-#hello-world-text ul li {
+.hello-world-left-list ul li {
 	margin-top: 20px;
 	padding-left: 15px; 
 }
 
-#hello-world-text ul li img {
+.hello-world-left-list ul li img {
 	display: inline-block;
 	width: 30px;
 	height: 30px;
 	vertical-align: middle;
 }
 
-#hello-world-pic {
+.hello-world-right {
 	width: 55%;
 	float: right;
 }
 
-#hello-world-pic img {
+.hello-world-right img {
 	max-height: 100%;
 	max-width: 100%;
 	margin: auto auto;
 }
 
-#services {
+.services {
 	height: 600px;
 	background-image: url('./../img-2.jpg');
 }
 
-#service-item-container {
+.service-items {
 	padding: 30px 30px;
 }
 
@@ -217,7 +221,7 @@ header {
 	width: 25%;
 }
 
-.service-icon {
+.service-item-icon, .stats-item-icon {
 	max-height: 100px;
 	max-width: 100px;
 	margin: 20px 0;
@@ -226,29 +230,27 @@ header {
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
-.service-icon img {
+.service-item-icon img, .stats-item-icon img {
 	max-height: 50px;
 	max-width: 50px;
 }
 
-#design-div {
-	width: 100%;
+.design-div {
 	height: 1200px;
 	background-color: #fafaff; 
 	padding: 50px 75px;
 }
 
-#filter li a {
+.design-div-filter li a {
 	color: #4d435c;
 	padding: 25px 25px;
 }
 
-#filter li a:hover {
+.design-div-filter li a:hover {
 	background-color: #f5f6fb;
 }
 
-#grid-container {
-	width: 100%;
+.design-div-grid {
 	height: 800px;
 }
 
@@ -300,7 +302,7 @@ header {
 	align-items: center;
 }
 
-#stats {
+.stats {
 	height: 300px;
 	background-image: url('./../img-4.jpg');
 	background-position: center;
@@ -310,17 +312,19 @@ header {
 	color: #d6aa04;
 }
 
-#pricing {
+.pricing {
 	align-items: center;
 	background-color: #fafaff;
 }
 
-#pricing-plans-container {
+.pricing-plans {
 	height: 400px;
 	margin: 40px;
+	flex-direction: row;
+	align-items: center;
 }
 
-.pricing-plans {
+.pricing-plan {
 	background-color: white;
 	float: left;
 	margin-right: 50px;
@@ -333,30 +337,24 @@ header {
 	box-shadow: 0 0 5px 0;
 }
 
-.pricing-plans ul {
+.pricing-plan-list ul {
 	list-style: none;
 }
 
-.pricing-plans button {
+.pricing-button a {
 	border-color: #0b0e4e;
 	color: #0b0e4e;
 }
 
-.pricing-plans button:hover {
+.pricing-button a:hover {
 	color: white;
 }
 
-#testimonials {
-	width: 100%;
+.testimonials {
 	height: 450px;
 	background-image: url('./../img-3.jpg');
 	background-position: center;
-}
-
-#testimonials-container {
-	width: 70%;
-	margin: auto auto;
-	padding-top: 50px;	
+	padding: 50px 0;
 }
 
 .testi-item {
@@ -371,14 +369,9 @@ header {
 	border-radius: 50%;
 }
 
-#blog {
-	width: 70%;
+.blog {
 	margin: 50px auto;
 	height: 600px;
-}
-
-#blog-post-container {
-	width: 100%;
 }
 
 .blog-post {
@@ -390,29 +383,26 @@ header {
 	box-shadow: 0 0 2px 0px;
 }
 
-.blog-post img {
+.blog-post-image img {
 	max-width: 100%;
 	border-radius: 5px 5px 0 0;
 }
 
-.blog-post button {
+.blog-post-button a {
 	border-color: #0b0e4e;
 	color: #0b0e4e;
 }
 
-.blog-post button:hover {
+.blog-post-button a:hover {
 	color: white;
 }
 
 footer {
-	width: 100%;
 	background-color: #0b0e4e;
 	color: white;
 }
 
-#footer-content {
-	width: 70%;
-	margin: auto auto;
+#footer-inner {
 	height: 400px;
 }
 
@@ -421,7 +411,7 @@ footer {
 	width: 25%;
 }
 
-#footer-link-container {
+.footer-links {
 	margin-top: 75px;
 	height: 200px;
 }
@@ -430,7 +420,7 @@ footer {
 	list-style: none;
 }
 
-.footer-link li, #footer-footer {
+.footer-link li, .footer-footer {
 	text-transform: uppercase;
 	font-size: x-small;
 	letter-spacing: 1.5px;
