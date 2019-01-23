@@ -6,7 +6,7 @@
 }
 
 .container {
-	width: 1400px;
+	width: 80%;
 	margin: auto auto;
 }
 
@@ -254,12 +254,14 @@
 	height: 800px;
 }
 
+.wrapper-item {
+	padding: 20px 20px 0 0;
+}
+
 .small-item, .big-item {
 	background-size: cover;
 	background-position: center;
 	display: block;
-	margin-top: 10px;
-	padding: 5%;
 }
 
 .small-item {
@@ -289,7 +291,6 @@
 
 .grid-column {
 	width: 30%; 
-	margin-right: 10px;
 	float: left;
 }
 
