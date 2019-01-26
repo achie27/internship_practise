@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+}
+
+.container {
+	width: 80%;
+	margin: auto auto;
+}
+
+header {
+	height: 40px;
+	display: flex;
+	align-items: center;	
+	border-bottom: 1px solid;
+}
+
+.header-left {
+	float: left;
+	width: 50%;
+}
+
+.header-right {
+	float: right;
+	width: 50%;
+}
+
+.header-icon-list {
+	list-style: none;
+	float: left;
+}
+
+.header-options-list {
+	float: right;
+	list-style: none;
+}
+
+.header-icon-list li, .header-options-list li {
+	float: left;
+	border-right: 1px solid;
+	padding: 5px;
+}
+
+.header-icon-list li:last-child, .header-options-list li:last-child {
+	border-right: 0px;
+}
+
+.language-selector {
+	display: inline;
+}
+
+.menu-inner {
+	height: 75px;
+	display: flex;
+	align-items: center;
+}
+
+.menu-logo {
+	width: 20%;
+	float: left;
+}
+
+.menu-menu {
+	width: 60%;
+	display: flex;
+	justify-content: center;
+}
+
+.menu-menu ul {
+	list-style: none;
+}
+
+.menu-menu ul li {
+	float: left;
+	padding: 10px 20px;
+}
+
+.menu-options {
+	float: right;
+	width: 20%;
+}
+
+.menu-options-search-box, .menu-options-cart {
+	display: inline;
+	float: right;
+}
+
+.banner-inner {
+	height: 600px;
+}
+
+.banner-item {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	background-image: url('./../fashion1.jpg');
+	background-size: cover;
+}
