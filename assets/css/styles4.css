@@ -6,7 +6,7 @@
 }
 
 .container {
-	width: 80%;
+	width: 70%;
 	margin: auto auto;
 }
 
@@ -98,3 +98,57 @@ header {
 	background-image: url('./../fashion1.jpg');
 	background-size: cover;
 }
+
+.sales-inner, .services-inner {
+	height: 350px;
+	margin: 0 -20px;
+	display: flex;
+	align-items: center;
+}
+
+.services-inner {
+	height: 275px;
+}
+
+.services {
+	background-color: lightgrey;
+}
+
+.sales-item, .services-item {
+	width: 33.3%;
+	height: 200px;
+	background-color: red;
+	float: left;
+	padding: 0 -20px 0 -20px;
+}
+
+.services-item	{
+	width: 25%;
+	height: 150px;
+}
+
+.sales-item-inner, .services-item-inner {
+	margin: 0 20px;
+	height: 100%;
+	background-color: lightgrey;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px 30px;
+}
+
+.services-item-inner {
+	background-color: white;
+	align-items: center;
+	text-align: center;
+}
+
+.services-item-round {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border-style: dotted;
+	border-width: 1px;
+}
+
+
