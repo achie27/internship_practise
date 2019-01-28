@@ -117,7 +117,6 @@ header {
 .sales-item, .services-item {
 	width: 33.3%;
 	height: 200px;
-	background-color: red;
 	float: left;
 	padding: 0 -20px 0 -20px;
 }
@@ -183,7 +182,6 @@ header {
 .new-collections-item, .featured-collections-item {
 	height: 450px;
 	width: 25%;
-	background-color: red;
 	float: left;
 	margin: 10px 0;
 }
@@ -253,7 +251,6 @@ header {
 	width: 33.3%;
 	height: 400px;
 	float: left;
-	background-color: red;
 }
 
 .latest-blog-item-inner {
@@ -265,10 +262,72 @@ header {
 
 .latest-blog-item-image {
 	height: 50%;
-	background-color: green;
+	background-image: url('./../1(1).jpg');
+	background-size: cover;
 }
 
 .latest-blog-item-info {
 	height: 50%;
-	background-color: blue;
+	background-color: #f6f6f6;
+}
+
+footer {
+	background-color: #252429;
+	color: white;
+}
+
+.footer-info {
+	height: 400px;
+}
+
+.footer-item {
+	width: 25%;
+	height: 100%;
+	padding: 100px 0;
+	float: left;
+}
+
+.footer-icons {
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+.footer-copyright {
+	float: right;
+	width: 50%;	
+	height: 100%;
+}
+
+.footer-footer {
+	background-color: #1F1E23;
+}
+
+.footer-footer-inner {
+	padding: 50px 0;	
+}
+
+.footer-timings-left {
+	width: 50%;
+	float: left;
+}
+
+.footer-timings-right {
+	float: right;
+	width: 50%;
+}
+
+.footer-timings-right ul, .footer-timings-left ul, .footer-item-content ul, .footer-icons ul {
+	list-style: none;
+}
+
+.footer-icons ul li {
+	float: left;
+}
+
+.latest-blog-item-info {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
 }
