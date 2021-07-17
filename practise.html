@@ -3,8 +3,41 @@
 <head>
 	<title>Exercises</title>
 	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: Arial;
+		}
+
+		.newdiv::after {
+			content: "";	
+			position: absolute;
+			top: 0;
+			left: 0;
+		    width: inherit;
+		    height: inherit;
+			background-color: inherit;
+		}
+	</style>
+	<script type="text/javascript">
+		function pr(ele) {
+			if(ele.target.style.backgroundColor == "green")
+				ele.target.style.backgroundColor = "red";
+			else
+				ele.target.style.backgroundColor = "green";
+		}
+
+		window.onload = () => {
+			document.getElementsByClassName('newdiv')[0].addEventListener('click', pr);
+		};
+	</script>
 </head>
 <body>
+
+	<div class="newdiv" style="width:150px; height: 150px;background-color: red"></div>
+
 	<div class="ex1">
 		<div class="ex1_first"></div>
 		<div class="ex1_second"></div>
@@ -86,6 +119,12 @@
 			</font>
 		</div>	
 
+	</div>
+	<br/><br/><br/>	
+	
+	<div class="random">
+		<div class="random-one"></div>
+		<div class="random-two"></div>
 	</div>
 </body>
 </html>
